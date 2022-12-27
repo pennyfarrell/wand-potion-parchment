@@ -9,6 +9,7 @@ body {
     font-family: 'Macondo', cursive;
     color: #ffffff;
     background-color: #000000;
+    height: 100%;
 }
 
 header {
@@ -20,8 +21,9 @@ header {
 h1 {
     font-family: 'Macondo', cursive;
     color: #e0dba7;
+    text-shadow: 2px 2px #551A8B;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.4rem;
 }
 
 .game-area {
@@ -29,10 +31,13 @@ h1 {
     height: 100%; */
     background-color: #ABB0B8;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
     justify-content: space-between;
     padding: 0 6px;
+    border-bottom: 16px solid #abb0b8;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #551A8B;
 }
 
 button {
@@ -47,14 +52,27 @@ button {
     flex-basis: 32%;
 }
 
-.game-area button {
-    width: 50%;
-    border: 2px solid #551A8B
+.game-area-buttons {
+    border: 2px solid #551A8B;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Mystico';
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    justify-content: space-between;
 }
 
 .score-area {
     background-color: #e0dba7;
     color: #000000;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.scores {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -62,9 +80,22 @@ button {
     justify-content: space-evenly;
 }
 
+.scores-div {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    justify-content: space-around
+}
+
 .score-area p {
     border: 2px solid #551A8B;
-    padding: 6px;
+    padding: 2rem;
+}
+
+h2 {
+    font-family: 'Macondo', cursive;
+    font-size: 1.8rem;
+    margin: 2px;
 }
 
 .reset {
@@ -72,11 +103,14 @@ button {
     display: flex;
     justify-content: center;
     text-align: center;
+    margin: 0.5rem;
 }
 
 .reset button {
     background-color: #404458;
     color: #e0dba7;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px #551A8B;
 }
 
 .footer {
@@ -84,6 +118,7 @@ button {
     display: flex;
     flex-direction: column;
     align-content: center;
+    color: #000000;
 }
 
 .icons8 {
