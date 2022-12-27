@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
 
 body {
-    font-family: 'Macondo', cursive;
+    font-family: 'Macondo';
     color: #ffffff;
     background-color: #000000;
     height: 100%;
@@ -19,7 +19,7 @@ header {
 }
 
 h1 {
-    font-family: 'Macondo', cursive;
+    font-family: 'Macondo';
     color: #e0dba7;
     text-shadow: 2px 2px #551A8B;
     text-align: center;
@@ -93,13 +93,12 @@ button {
 }
 
 h2 {
-    font-family: 'Macondo', cursive;
+    font-family: 'Mystico';
     font-size: 1.8rem;
     margin: 2px;
 }
 
 .reset {
-    background-color: ;
     display: flex;
     justify-content: center;
     text-align: center;
