@@ -3,8 +3,10 @@
     src: url('mystico.ttf');
   }
 
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
 body {
-    font-family: 'Mystico';
+    font-family: 'Macondo', cursive;
     color: #ffffff;
     background-color: #000000;
 }
@@ -16,14 +18,15 @@ header {
 }
 
 h1 {
-    color: #EDE3FF;
+    font-family: 'Macondo', cursive;
+    color: #e0dba7;
     text-align: center;
     font-size: 2.5rem;
 }
 
 .game-area {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     background-color: #ABB0B8;
     display: flex;
     flex-direction: row;
@@ -38,17 +41,20 @@ button {
     text-align: center;
     align-items: center;
     font-family: 'Mystico';
-    color: #e0dba7;
+    color: black;
     font-size: 1rem;
     font-weight: bold;
     flex-basis: 32%;
 }
 
-button img {
+.game-area button {
     width: 50%;
+    border: 2px solid #551A8B
 }
 
 .score-area {
+    background-color: #e0dba7;
+    color: #000000;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -56,13 +62,25 @@ button img {
     justify-content: space-evenly;
 }
 
+.score-area p {
+    border: 2px solid #551A8B;
+    padding: 6px;
+}
+
 .reset {
+    background-color: ;
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
+.reset button {
+    background-color: #404458;
+    color: #e0dba7;
+}
+
 .footer {
+    background-color: #ABB0B8;
     display: flex;
     flex-direction: column;
     align-content: center;
