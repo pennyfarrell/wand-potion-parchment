@@ -1,21 +1,31 @@
 @font-face {
     font-family: 'Mystico';
     src: url('mystico.ttf');
-  }
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
 
-html, body {
+html,
+body {
     margin: 0;
     height: 100%;
+    overflow: hidden;
 }
 
 body {
-    background-image: url("assets/images/aurora.webp");
     font-family: 'Macondo';
     color: #ffffff;
     background-color: #000000;
     height: 100%;
+}
+
+.bg-container {
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/images/aurora.jpg");
+    background-repeat: no-repeat;
+    border: 3px solid #551A8B;
+    box-sizing: border-box;
 }
 
 header {
@@ -29,7 +39,7 @@ h1 {
     color: #e0dba7;
     text-shadow: 2px 2px #551A8B;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .game-area {
@@ -44,6 +54,8 @@ h1 {
     text-align: center;
     font-size: 1.6rem;
     color: #551A8B;
+    font-weight: bold;
+    text-shadow: 1px 1px #e0dba7;
 }
 
 button {
@@ -93,7 +105,8 @@ button {
     display: flex;
     flex-direction: row;
     font-size: 1.2rem;
-    justify-content: space-around
+    justify-content: space-around;
+    margin: 0;
 }
 
 .score-area p {
@@ -102,9 +115,11 @@ button {
 }
 
 h2 {
-    font-family: 'Mystico';
-    font-size: 1.8rem;
-    margin: 2px;
+    font-family: 'Macondo';
+    color: #551A8B;
+    font-size: 1.6rem;
+    text-shadow: 0 0 #000000;
+    margin: 0;
 }
 
 .reset {
