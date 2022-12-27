@@ -5,7 +5,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
 
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
 body {
+    background-image: url("assets/images/aurora.webp");
     font-family: 'Macondo';
     color: #ffffff;
     background-color: #000000;
@@ -53,7 +59,6 @@ button {
 }
 
 .game-area-buttons {
-    border: 2px solid #551A8B;
     display: flex;
     flex-direction: row;
     font-family: 'Mystico';
@@ -61,6 +66,10 @@ button {
     font-size: 1rem;
     font-weight: bold;
     justify-content: space-between;
+}
+
+.game-area-buttons button {
+    border: 2px solid #551A8B;
 }
 
 .score-area {
