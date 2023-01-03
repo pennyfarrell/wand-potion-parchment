@@ -26,6 +26,16 @@ document.getElementById("computer-score").innerHTML = parseInt(document.getEleme
         }     
 
         // Update results on the page
-document.querySelector(".results").innerHTML = `You chose ${playerChoice}, the wizard chose ${computerChoice}. $result`;
+document.querySelector(".results").innerHTML = `You chose ${playerChoice}, the wizard chose ${computerChoice}. $(result)`;
     }
-    
+
+    //Event listener for button click
+    document.getElementById("wand-button").addEventListener("click", () => playGame("wand"));
+    document.getElementById("potion-button").addEventListener("click", () => playGame("potion"));
+    document.getElementById("parchment-button").addEventListener("click", () => playGame("parchment"));
+
+    //Add event listener for reset button
+    document.querySelector(".reset button").addEventListener("click", () => {
+        document.getElementById("your-score").innerHTML = 0;
+        document.getElementById("computer-score").innerHTML = 0;
+    });
