@@ -23,9 +23,9 @@ function playGame(playerChoice) {
             result = "You lose!";
     
 document.getElementById("computer-score").innerHTML = parseInt(document.getElementById("computer-score").innerHTML) + 1;
-        }        
-                )
-            }
-        }
+        }     
+
+        // Update results on the page
+document.querySelector(".results").innerHTML = `You chose ${playerChoice}, the wizard chose ${computerChoice}. $result`;
     }
-}
+    
