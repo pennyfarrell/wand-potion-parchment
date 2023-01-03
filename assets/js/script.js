@@ -1,11 +1,12 @@
 function playGame(playerChoice) {
+    //Determine computer choice randomly
     const computerChoice = Math.random() < 0.5 ? "wand" : "potion";
-    if (computerChoice === "wand") {
-        computerChoice = "parchment";
-    } else {
-        computerChoice = "wand";
-    }
-
+    // if (computerChoice === "wand") {
+    //     computerChoice = "parchment";
+    // } else if (computerChoice === "potion") {
+    //     computerChoice = "wand";
+    // }
+    
     let result;
     if (playerChoice === computerChoice) {
         result = "It's a tie!";
@@ -26,13 +27,13 @@ document.getElementById("computer-score").innerHTML = parseInt(document.getEleme
         }     
 
         // Update results on the page
-document.querySelector(".results").innerHTML = `You chose ${playerChoice}, the wizard chose ${computerChoice}. $(result)`;
+document.querySelector(".results").innerHTML = `You chose ${playerChoice}, the wizard chose ${computerChoice}. ${result}`;
     }
 
     //Event listener for button click
-    document.getElementById("wand-button").addEventListener("click", () => playGame("wand"));
-    document.getElementById("potion-button").addEventListener("click", () => playGame("potion"));
-    document.getElementById("parchment-button").addEventListener("click", () => playGame("parchment"));
+    document.getElementById("wand-button").addEventListener("click", () => playGame("wand-button"));
+    document.getElementById("potion-button").addEventListener("click", () => playGame("potion-button"));
+    document.getElementById("parchment-button").addEventListener("click", () => playGame("parchment-button"));
 
     //Add event listener for reset button
     document.querySelector(".reset button").addEventListener("click", () => {
