@@ -185,7 +185,7 @@ Media queries  */
     .results {
         font-size: 1.8rem;
     }
-    
+
     .score-board {
         width: 50%;
         height: 25%;
@@ -217,4 +217,10 @@ Media queries  */
     flex-basis: 46%;
 }
 
+}
+
+@media (min-width: 425px) {
+img {
+    width: 50%;
+}
 }
