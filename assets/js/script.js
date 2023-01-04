@@ -32,7 +32,7 @@ document.getElementById("computer-score").innerHTML = parseInt(document.getEleme
         }     
 
         // Update results on the page
-document.querySelector(".results").innerHTML = `You chose ${playerChoice.textContent}, the wizard chose ${computerChoice}. ${result}`;
+document.querySelector(".results").innerHTML = `You chose ${playerChoice.textContent}. <br> The wizard chose ${computerChoice}. <br> ${result}`;
     }
 
     //Event listener for button click
