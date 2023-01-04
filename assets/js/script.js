@@ -10,23 +10,30 @@ function playGame(playerChoice) {
 
     let result;
     if (playerChoice === computerChoice) {
-        result = "It's a tie!";
+        result = "Sussy....It's a tie!";
+        // Handle tie result
+        document.getElementById("your-score").innerHTML = parseInt(document.getElementById("your-score").innerHTML);
+        document.getElementById("computer-score").innerHTML = parseInt(document.getElementById("computer-score").innerHTML);
     } else if (playerChoice === "wand" && computerChoice === "potion") {
-        result = "You win!";
+        result = "Wahoo - You win!";
+        // Update player score
         document.getElementById("your-score").innerHTML = parseInt(document.getElementById("your-score").innerHTML) + 1;
     } else if (playerChoice === "potion" && computerChoice === "parchment") {
-        result = "You win!";
+        result = "Woop woop - You win!";
+        // Update player score
         document.getElementById("your-score").innerHTML = parseInt(document.getElementById("your-score").innerHTML) + 1;
     } else if (playerChoice === "parchment" && computerChoice === "wand") {
-        result = "You win!";
+        result = "Yassss- You win!";
+        // Update player score
         document.getElementById("your-score").innerHTML = parseInt(document.getElementById("your-score").innerHTML) + 1;
     } else {
-        result = "You lose!";
+        result = "Ugg sorry - You lose!";
+        // Update computer score
         document.getElementById("computer-score").innerHTML = parseInt(document.getElementById("computer-score").innerHTML) + 1;
     }
 
     // Update results on the page
-    document.querySelector(".results").innerHTML = `You chose ${playerChoice}. <br> The wizard chose ${computerChoice}. <br> ${result}`;
+    document.querySelector(".results").innerHTML = `You chose ${playerChoice.innerHTML.trim()}. <br> The wizard chose ${computerChoice}. <br> ${result}`;
 }
 
 // Event listener for button click
