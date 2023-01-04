@@ -1,3 +1,8 @@
+window.onload = function() {
+    document.getElementById("your-score").innerHTML = 0;
+    document.getElementById("computer-score").innerHTML = 0;
+  };
+  
 function playGame(playerChoice) {
     //Determine computer choice randomly
     const computerChoice = Math.random() < 0.5 ? "wand" : "potion";
@@ -27,13 +32,13 @@ document.getElementById("computer-score").innerHTML = parseInt(document.getEleme
         }     
 
         // Update results on the page
-document.querySelector(".results").innerHTML = `You chose ${playerChoice}, the wizard chose ${computerChoice}. ${result}`;
+document.querySelector(".results").innerHTML = `You chose ${playerChoice.textContent}, the wizard chose ${computerChoice}. ${result}`;
     }
 
     //Event listener for button click
-    document.getElementById("wand-button").addEventListener("click", () => playGame("wand-button"));
-    document.getElementById("potion-button").addEventListener("click", () => playGame("potion-button"));
-    document.getElementById("parchment-button").addEventListener("click", () => playGame("parchment-button"));
+    document.getElementById("wand-button").addEventListener("click", () => playGame(event.target));
+    document.getElementById("potion-button").addEventListener("click", () => playGame(event.target));
+    document.getElementById("parchment-button").addEventListener("click", () => playGame(event.target));
 
     //Add event listener for reset button
     document.querySelector(".reset button").addEventListener("click", () => {
