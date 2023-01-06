@@ -32,8 +32,8 @@ function playGame(playerChoice) {
     document.getElementById("computer-score").innerHTML = parseInt(document.getElementById("computer-score").innerHTML) + 1;
   }
 
-  // Update results on the page
-  document.querySelector(".results").innerHTML = `You chose ${playerChoice}. <br> The wizard chose ${computerChoice}. <br> ${result}`;
+// Update results on the page
+document.querySelector(".results").innerHTML = `<br> You chose ${playerChoice}. <br> The wizard chose ${computerChoice}. <br> ${result}`;
 }
 
 // Event listener for button click

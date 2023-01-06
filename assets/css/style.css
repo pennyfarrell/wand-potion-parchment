@@ -136,6 +136,12 @@ h2 {
     justify-content: center;
 }
 
+
+.results::before {
+    content: "Results: "; /* Insert the text "Results: " on onload before the content of the div element */
+    font-weight: bold;
+  }
+
 .reset {
     display: flex;
     justify-content: center;
