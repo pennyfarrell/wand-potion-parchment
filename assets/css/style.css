@@ -126,6 +126,14 @@ h2 {
 .results {
     font-size: 1.5rem;
     text-align: center;
+    display: inline-block;
+    padding: 0.5rem 2.5rem;
+    border: solid 2px #551A8B;
+}
+
+.results-container {
+    display: flex;
+    justify-content: center;
 }
 
 .reset {
@@ -159,6 +167,7 @@ h2 {
     flex-direction: row;
     width: 25%;
 }
+
 /* 
 Media queries  */
 
@@ -225,3 +234,16 @@ img {
 }
 }
 
+@media (min-width: 1024px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .game-area p {
+        font-size: 2.5rem;
+    }
+
+    .scores-div {
+        font-size: 2.5rem;
+}
+}
